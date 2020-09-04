@@ -14,6 +14,79 @@
 <br>          After installation, we should be able to see the g++ version on the Cygwin
               command prompt.
     <img src="https://github.com/AdarshKoppManjunath/Raytracing/blob/master/Screenshots/Fig1.PNG" alt="Smiley face" >
+<br> Should be able to see below folders under “cygwin/lib”
+ <img src="https://github.com/AdarshKoppManjunath/Raytracing/blob/master/Screenshots/Fig2.PNG" alt="Smiley face" >
+ 
+ <br><br><b>
+2) Execution:</b>
+<br>• Copy the CS802-PA-AdarshKoppaManjunath-200397257 folder to a
+directory and open this directory in the cygwin command prompt.
+<br>• We have “SequentialRaytracing.cpp”, “ParllelRaytracingWithOpenMP.cpp”
+and “geometry.h” files
+<br>• “geometry.h” consists of all vectors operations like addition, subtraction,
+multiplication, and division. We need this file to run both sequential and
+parallel codes.
+<br>• To compile squential code, type “g++ SequentialRaytracing.cpp -o
+SequentialRaytracing” on cygwin command prompt.
+<br>• After compilation, execute the same with the command “time
+./SequentialRatracing”
+<br>• We can see the sequential ray tracing output in the below snippet.
+Fig 3- sequential code running time.
+<br>• From the above snippet, we can see it took 43.26 seconds to complete
+sequential raytracing algorithm (this doesn’t include initial setup or image
+array copying to .ppm file time. This is Purely time taken to complete ray
+tracing algorithm sequentially) . This time is calculated by referring the legacy
+code given with the assignment.
+<br>• time command while running the program also gives real, user, and sys time.
+Real time is the actual time taken from start to end. User time is the cumulative
+time spent by all the CPUs during the computation and sys time is the
+cumulative time spent by all the CPUs during system-related tasks such as
+memory allocation.
+<br>• On executing it also generates the “SequentialRaytracing.ppm” file. Which
+can be viewed and converted to jpeg on “https://convertio.co/ppm-jpg/”
+Fig 4- Raytracing by sequential method.
+<br>• To execute “ParallelRaytraceWithOpenMp.cpp”, we need to pass -fopenmp
+command while compiling.
+“g++ -fopenmp ParallelRaytracingWithOpenMP.cpp -o ParallelRaytracing
+• After compling we can run the same using “time
+./ParallelRaytracingWithOpenMP” command
+Fig 5- Parallel Program running time.
+• From the above snippet, we can see it took 13.0064 seconds to complete
+parallel raytracing algorithm (this doesn’t include initial setup or image array
+copying to .ppm file time. This is Purely time taken to complete ray tracing
+algorithm parallely). This time is calculated by referring the legacy code given
+with the assignment.
+• On executing it also generates the “SequentialRaytracing.ppm” file. Which
+can be viewed and converted to jpeg on “https://convertio.co/ppm-jpg/”
+Fig 6- Raytracing by parallel method with the help of OpenMP
+3) Comparison
+• Raytracing Algorithm consists of a lot of computation. Concepts like
+diffusion, specular, shadow, reflection, recursion, intersection, materials, etc.
+takes a lot of time in terms of computation. As computation increases, time
+consumption also increases. In this case, we can get benefited by parallel
+programming models like OpenMP which would run computations in parallel
+and finishes tasks early.
+• A parallel method is useful for a complex and larger problem, compared to a
+smaller problem. With my current knowledge in ray tracing, a sequential
+program that I have modified has very little computation and it took
+around 43.26 seconds to finish the ray tracing algorithm. With the help
+of OpenMP, I achieved the same task in 13.006 seconds. Which gives 
+speedup of = 43.26 / 13.006 = 3.32. Number of threads=4, therefore
+efficiency = 3.32/4 *100 = 83%
+• As computation increases ( for example, on adding more objects, increasing
+the size of objects, increasing the reflection depth, increasing the scene
+(image) size, or with more lightning more operation) ray tracing algorithm
+will take way more time to execute sequentially. And parallel time will
+increase only by a small value.
+References:
+1) S. M. Ashraful Kadir and Tazrian Khan. Parallel Ray Tracing using MPI and
+OpenMP.2008.https://www.researchgate.net/publication/228686336_Paralle
+l_Ray_Tracing_using_MPI_and_OpenMP
+2) https://github.com/ssloy
+3) https://code.google.com/archive/p/simple-ray-tracing
+4) http://kylehalladay.com/blog/tutorial/math/2013/12/24/Ray-SphereIntersection.html
+5) https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-toshading/reflection-refraction-fresnel
+6) https://github.com/marczych/RayTracer
     
     
  
