@@ -5,7 +5,7 @@
 <br>with GCC compiler and OpenMP. This document will help in understanding how to
 <br>execute programs, the output of both sequential and parallel, time taken by both the
 <br>programs, and comparison between them.
-<br><br>1) Initial Setup
+<br><br><b>1) Initial Setup</b>
 <br>          Install Cygwin on windows system from https://www.cygwin.com/
 <br>          During installation, select “ http://cygwin.mirros.hoobly.com ” as a
               download site.
@@ -15,7 +15,10 @@
               command prompt. 
 <br>
               
-    <img src="https://github.com/AdarshKoppManjunath/ProduceItemRecognitionUsingCNN/blob/master/PIR-Images/Solution%20Overwiew.PNG" alt="Smiley face" >
+    <img src="https://github.com/AdarshKoppManjunath/Raytracing/blob/master/Screenshots/Fig1.PNG" alt="Smiley face" >
+    
+    
+    <br>
 
 
 
