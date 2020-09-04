@@ -12,13 +12,11 @@
 <br>          In the packages, select OpenMP, C, and GCC related packages.
 <br>          Finish installation.
 <br>          After installation, we should be able to see the g++ version on the Cygwin
-              command prompt. 
-<br>
-              
+              command prompt.
     <img src="https://github.com/AdarshKoppManjunath/Raytracing/blob/master/Screenshots/Fig1.PNG" alt="Smiley face" >
     
     
-    <br>
+ 
 
 
 
