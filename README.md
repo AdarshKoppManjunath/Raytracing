@@ -6,16 +6,17 @@
 <br>execute programs, the output of both sequential and parallel, time taken by both the
 <br>programs, and comparison between them.
 <br><br><b>1) Initial Setup</b>
-<br>          Install Cygwin on windows system from https://www.cygwin.com/
-<br>          During installation, select “ http://cygwin.mirros.hoobly.com ” as a
-              download site.
-<br>          In the packages, select OpenMP, C, and GCC related packages.
-<br>          Finish installation.
-<br>          After installation, we should be able to see the g++ version on the Cygwin
-              command prompt.
+<br>          • Install Cygwin on windows system from https://www.cygwin.com/
+<br>• During installation, select “ http://cygwin.mirros.hoobly.com ” as a
+download site.
+<br>• In the packages, select OpenMP, C, and GCC related packages.
+<br>• Finish installation.
+<br>• After installation, we should be able to see the g++ version on the Cygwin
+command prompt
     <img src="https://github.com/AdarshKoppManjunath/Raytracing/blob/master/Screenshots/Fig1.PNG" alt="Smiley face" >
-<br> Should be able to see below folders under “cygwin/lib”
- <img src="https://github.com/AdarshKoppManjunath/Raytracing/blob/master/Screenshots/Fig2.PNG" alt="Smiley face" >
+
+<br><br> Should be able to see below folders under “cygwin/lib”
+ <br><img src="https://github.com/AdarshKoppManjunath/Raytracing/blob/master/Screenshots/Fig2.PNG" alt="Smiley face" >
  
  <br><br><b>
 2) Execution:</b>
@@ -31,7 +32,7 @@ SequentialRaytracing” on cygwin command prompt.
 <br>• After compilation, execute the same with the command “time
 ./SequentialRatracing”
 <br>• We can see the sequential ray tracing output in the below snippet.
-Fig 3- sequential code running time.
+<br><img src="https://github.com/AdarshKoppManjunath/Raytracing/blob/master/Screenshots/Fig3.PNG" alt="Smiley face" >
 <br>• From the above snippet, we can see it took 43.26 seconds to complete
 sequential raytracing algorithm (this doesn’t include initial setup or image
 array copying to .ppm file time. This is Purely time taken to complete ray
