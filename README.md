@@ -6,13 +6,16 @@
 <br>execute programs, the output of both sequential and parallel, time taken by both the
 <br>programs, and comparison between them.
 <br><br>1) Initial Setup
-<br> Install Cygwin on windows system from https://www.cygwin.com/
-<br>During installation, select “ http://cygwin.mirros.hoobly.com ” as a
-download site.
-<br>In the packages, select OpenMP, C, and GCC related packages.
-<br>Finish installation.
-<br> After installation, we should be able to see the g++ version on the Cygwin
-command prompt. 
+<br>          Install Cygwin on windows system from https://www.cygwin.com/
+<br>          During installation, select “ http://cygwin.mirros.hoobly.com ” as a
+              download site.
+<br>          In the packages, select OpenMP, C, and GCC related packages.
+<br>          Finish installation.
+<br>          After installation, we should be able to see the g++ version on the Cygwin
+              command prompt. 
+<br>
+              
+    <img src="https://github.com/AdarshKoppManjunath/ProduceItemRecognitionUsingCNN/blob/master/PIR-Images/Solution%20Overwiew.PNG" alt="Smiley face" >
 
 
 
